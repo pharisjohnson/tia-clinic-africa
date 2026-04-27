@@ -46,7 +46,7 @@ function Hero() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)]">
         {/* Left: text + actions */}
         <div className="relative z-10 text-foreground">
-          <p className="eyebrow text-gold mb-6">A One-Year Transformation</p>
+          
           <h1
             className="font-serif text-foreground font-light"
             style={{
