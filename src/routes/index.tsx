@@ -42,7 +42,7 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#fff8f5] via-white to-[#fdeef2]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#FBDDDC] via-background to-[#fdeef2]">
       {/* Decorative ambient orbs */}
       <div
         aria-hidden

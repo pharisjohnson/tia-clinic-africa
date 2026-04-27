@@ -18,7 +18,7 @@ export function SiteHeader({ transparent: _transparent = false }: { transparent?
   const [tOpen, setTOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-border">
+    <header className="sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border">
 
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-5 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
