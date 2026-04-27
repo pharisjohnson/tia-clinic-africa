@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-transformation.png";
-import clinicRoom from "@/assets/clinic-room.png";
+
 import skincare from "@/assets/skincare-treatment.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SiteHeader transparent />
+      <SiteHeader />
       <Hero />
       <TransformationCallout />
       <ServicesPreview />
@@ -42,11 +42,11 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-end overflow-hidden bg-white">
       <img
         src={heroImg}
         alt="Tia Clinics patient transformation — one year wellness journey"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-contain object-center md:object-cover md:object-top"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/40 to-foreground/30" />
       <div className="relative z-10 px-6 lg:px-12 pb-24 pt-40 max-w-7xl mx-auto w-full">
@@ -134,7 +134,15 @@ function Recovery() {
     <section className="relative py-32 px-6 lg:px-12 bg-secondary">
       <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div className="relative">
-          <img src={clinicRoom} alt="Recovery suite" className="w-full h-[600px] object-cover rounded-sm shadow-2xl" />
+          <div className="relative w-full aspect-video rounded-sm overflow-hidden shadow-2xl bg-ink">
+            <iframe
+              src="https://www.viddler.com/embed/Su5aEJ/?f=1&autoplay=0&player=full&secret=&loop=0&nologo=0&hd=1"
+              className="absolute inset-0 w-full h-full"
+              title="Tia Clinics — The Recovery Wing"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
           <div className="absolute -bottom-8 -right-8 hidden md:block bg-forest text-background p-8 max-w-xs">
             <p className="font-serif text-4xl text-gold">24/7</p>
             <p className="text-sm font-light tracking-wide mt-2 text-background/80">
