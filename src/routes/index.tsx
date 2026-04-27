@@ -48,11 +48,20 @@ function Hero() {
         alt="Tia Clinics patient transformation — one year wellness journey"
         className="absolute inset-0 w-full h-full object-contain object-center md:object-cover md:object-top"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/40 to-foreground/30" />
+      {/* Subtle blur ring + vignette to make the transformation pop */}
+      <div
+        aria-hidden
+        className="absolute inset-0 backdrop-blur-[2px] [mask-image:radial-gradient(ellipse_60%_55%_at_center,transparent_45%,black_85%)]"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 [background:radial-gradient(ellipse_70%_60%_at_center,transparent_40%,rgba(0,0,0,0.55)_85%,rgba(0,0,0,0.8)_100%)]"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/45 to-foreground/20" />
       <div className="relative z-10 px-6 lg:px-12 pb-24 pt-40 max-w-7xl mx-auto w-full">
         <div className="max-w-2xl">
           <p className="eyebrow text-gold mb-6">A One-Year Transformation</p>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-[1.02]">
+          <h1 className="font-serif text-[36px] md:text-7xl lg:text-8xl text-background leading-[0.95] tracking-[-0.02em]">
             Where Wellness Meets
             <br />
             <em className="text-gold font-light">Aesthetic Excellence</em>
