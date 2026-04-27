@@ -42,8 +42,29 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#fff8f5] via-white to-[#fdeef2]">
+      {/* Decorative ambient orbs */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full opacity-60 blur-3xl"
+        style={{ background: "radial-gradient(circle at center, rgba(241,93,141,0.18), transparent 70%)" }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -bottom-40 -right-32 w-[600px] h-[600px] rounded-full opacity-50 blur-3xl"
+        style={{ background: "radial-gradient(circle at center, rgba(201,162,107,0.22), transparent 70%)" }}
+      />
+      {/* Subtle grain / dot texture */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        style={{
+          backgroundImage:
+            "radial-gradient(rgba(0,0,0,0.6) 1px, transparent 1px)",
+          backgroundSize: "22px 22px",
+        }}
+      />
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)]">
         {/* Left: text + actions */}
         <div className="relative z-10 text-foreground">
           
