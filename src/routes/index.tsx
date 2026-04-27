@@ -61,10 +61,22 @@ function Hero() {
       <div className="relative z-10 px-6 lg:px-12 pb-[10px] pt-40 max-w-7xl mx-auto w-full">
         <div className="max-w-2xl mx-auto text-center">
           <p className="eyebrow text-gold mb-6">A One-Year Transformation</p>
-          <h1 className="font-serif text-[36px] md:text-7xl lg:text-8xl text-background leading-[0.95] tracking-[-0.02em]">
-            Where Wellness Meets
-            <br />
-            <em className="text-gold font-light">Aesthetic Excellence</em>
+          <h1
+            className="font-serif text-background font-light"
+            style={{
+              fontSize: "clamp(28px, 6vw, 96px)",
+              lineHeight: "clamp(1.02, 1.05, 1.08)",
+              letterSpacing: "clamp(-0.005em, -0.015em, -0.025em)",
+            }}
+          >
+            <span className="md:hidden">
+              Where Wellness Meets <em className="text-gold font-light">Aesthetic Excellence</em>
+            </span>
+            <span className="hidden md:inline">
+              Where Wellness Meets <em className="text-gold font-light">Aesthetic Excellence.</em>
+              <br />
+              Refined care, crafted for <em className="text-gold font-light">your transformation.</em>
+            </span>
           </h1>
           <div className="gold-divider w-32 my-10 mx-auto" />
           <p className="text-background/90 text-lg md:text-xl font-light max-w-xl leading-relaxed mx-auto">
