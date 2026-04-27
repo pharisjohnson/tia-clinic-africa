@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-transformation.png";
-import clinicRoom from "@/assets/clinic-room.png";
+
 import skincare from "@/assets/skincare-treatment.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
