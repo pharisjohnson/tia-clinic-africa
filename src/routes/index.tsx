@@ -175,7 +175,7 @@ function Recovery() {
         <div className="relative">
           <div className="relative w-full aspect-video rounded-sm overflow-hidden shadow-2xl bg-ink">
             <iframe
-              src="https://www.viddler.com/embed/Su5aEJ/?f=1&autoplay=0&player=full&secret=&loop=0&nologo=0&hd=1"
+              src="https://www.viddler.com/embed/player?id=11019&playbackId=VlRkz9hnDA9w36f3XkItS97Q00ubCt02CJ6cMvjvrrxw00&color=default"
               className="absolute inset-0 w-full h-full"
               title="Tia Clinics — The Recovery Wing"
               allow="autoplay; fullscreen; picture-in-picture"
