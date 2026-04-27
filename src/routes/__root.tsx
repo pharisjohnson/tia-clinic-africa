@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "lovable-tia" },
+      { name: "description", content: "An aesthetic and wellness clinic website showcasing treatments, patient stories, and booking." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "lovable-tia" },
+      { property: "og:description", content: "An aesthetic and wellness clinic website showcasing treatments, patient stories, and booking." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "lovable-tia" },
+      { name: "twitter:description", content: "An aesthetic and wellness clinic website showcasing treatments, patient stories, and booking." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c93cd642-8fe9-4542-b1bb-eab2be09cc7d/id-preview-030c09e7--233d19da-e35d-4a69-8322-92395bf736ab.lovable.app-1777287122088.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c93cd642-8fe9-4542-b1bb-eab2be09cc7d/id-preview-030c09e7--233d19da-e35d-4a69-8322-92395bf736ab.lovable.app-1777287122088.png" },
     ],
     links: [
       {
