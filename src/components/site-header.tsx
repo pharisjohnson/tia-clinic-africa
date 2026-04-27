@@ -30,7 +30,7 @@ export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
           <img src={logo} alt="Tia Clinics" className="h-11 w-auto" />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-10 text-[0.78rem] tracking-[0.2em] uppercase">
+        <nav className="hidden md:flex items-center gap-10 font-smallcaps text-[0.82rem] tracking-[0.18em] uppercase">
           <Link to="/" className="hover:text-gold transition-colors" activeOptions={{ exact: true }} activeProps={{ className: "text-gold" }}>
             Home
           </Link>
