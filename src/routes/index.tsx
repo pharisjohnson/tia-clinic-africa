@@ -102,12 +102,13 @@ function Hero() {
         </div>
 
         {/* Right: hero image */}
-        <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-[80vh] rounded-sm overflow-hidden bg-secondary">
+        <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-[80vh] rounded-sm overflow-hidden bg-gradient-to-br from-secondary to-[#f7e3e9] shadow-2xl ring-1 ring-gold/20">
           <img
             src={heroImg}
             alt="Tia Clinics patient transformation — one year wellness journey"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
+          <div aria-hidden className="absolute inset-0 ring-1 ring-inset ring-white/30" />
         </div>
       </div>
     </section>
