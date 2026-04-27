@@ -60,8 +60,6 @@ function Hero() {
             </span>
             <span className="hidden lg:inline">
               Where Wellness Meets <em className="text-gold font-light">Aesthetic Excellence.</em>
-              <br />
-              Refined care, crafted for <em className="text-gold font-light">your transformation.</em>
             </span>
           </h1>
           <div className="gold-divider w-32 my-8" />
