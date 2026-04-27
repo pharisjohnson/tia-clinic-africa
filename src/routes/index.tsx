@@ -42,55 +42,53 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex items-end justify-center overflow-hidden bg-white">
-      <img
-        src={heroImg}
-        alt="Tia Clinics patient transformation — one year wellness journey"
-        className="absolute inset-0 w-full h-full object-contain object-center md:object-cover md:object-top"
-      />
-      {/* Subtle blur ring + vignette to make the transformation pop */}
-      <div
-        aria-hidden
-        className="absolute inset-0 backdrop-blur-[2px] [mask-image:radial-gradient(ellipse_60%_55%_at_center,transparent_45%,black_85%)]"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 [background:radial-gradient(ellipse_70%_60%_at_center,transparent_40%,rgba(0,0,0,0.35)_85%,rgba(0,0,0,0.55)_100%)]"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/15 to-transparent" />
-      <div className="relative z-10 px-6 lg:px-12 pb-[10px] pt-40 max-w-7xl mx-auto w-full">
-        <div className="max-w-2xl mx-auto text-center">
+    <section className="relative bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-5rem)]">
+        {/* Left: text + actions */}
+        <div className="relative z-10 text-foreground">
           <p className="eyebrow text-gold mb-6">A One-Year Transformation</p>
           <h1
-            className="font-serif text-background font-light"
+            className="font-serif text-foreground font-light"
             style={{
               fontSize: "clamp(28px, 6vw, 96px)",
               lineHeight: "clamp(1.02, 1.05, 1.08)",
               letterSpacing: "clamp(-0.005em, -0.015em, -0.025em)",
             }}
           >
-            <span className="md:hidden">
+            <span className="lg:hidden">
               Where Wellness Meets <em className="text-gold font-light">Aesthetic Excellence</em>
             </span>
-            <span className="hidden md:inline">
+            <span className="hidden lg:inline">
               Where Wellness Meets <em className="text-gold font-light">Aesthetic Excellence.</em>
               <br />
               Refined care, crafted for <em className="text-gold font-light">your transformation.</em>
             </span>
           </h1>
-          <div className="gold-divider w-32 my-10 mx-auto" />
-          <p className="text-background/90 text-lg md:text-xl font-light max-w-xl leading-relaxed mx-auto">
+          <div className="gold-divider w-32 my-8" />
+          <p className="text-muted-foreground text-lg md:text-xl font-light max-w-xl leading-relaxed">
             Real journeys. Real results. Pioneering non-surgical facelifts, hair restoration,
             wellness therapy and continuum care in Nairobi.
           </p>
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-10 flex flex-wrap items-center gap-8">
             <Link to="/booking" className="btn-gold px-10 py-4 rounded-sm text-center">
               Book Consultation
             </Link>
-            <Link to="/treatments" className="btn-outline-gold px-10 py-4 rounded-sm text-center bg-background/10 backdrop-blur">
-              Explore Treatments
+            <Link
+              to="/treatments"
+              className="text-gold font-medium tracking-wide uppercase text-sm border-b border-gold/40 pb-1 hover:border-gold transition-colors"
+            >
+              Explore Treatments →
             </Link>
           </div>
+        </div>
+
+        {/* Right: hero image */}
+        <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-[80vh] rounded-sm overflow-hidden bg-secondary">
+          <img
+            src={heroImg}
+            alt="Tia Clinics patient transformation — one year wellness journey"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
         </div>
       </div>
     </section>
