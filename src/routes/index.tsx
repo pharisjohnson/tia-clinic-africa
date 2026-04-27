@@ -29,7 +29,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SiteHeader transparent />
+      <SiteHeader />
       <Hero />
       <TransformationCallout />
       <ServicesPreview />
@@ -42,11 +42,11 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex items-end overflow-hidden">
+    <section className="relative min-h-[100vh] flex items-end overflow-hidden bg-white">
       <img
         src={heroImg}
         alt="Tia Clinics patient transformation — one year wellness journey"
-        className="absolute inset-0 w-full h-full object-cover object-top"
+        className="absolute inset-0 w-full h-full object-contain object-center md:object-cover md:object-top"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/40 to-foreground/30" />
       <div className="relative z-10 px-6 lg:px-12 pb-24 pt-40 max-w-7xl mx-auto w-full">

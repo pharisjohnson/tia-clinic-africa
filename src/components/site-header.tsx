@@ -13,18 +13,13 @@ const treatments = [
   { to: "/treatments", label: "Pain Management", hash: "pain" },
 ];
 
-export function SiteHeader({ transparent = false }: { transparent?: boolean }) {
+export function SiteHeader({ transparent: _transparent = false }: { transparent?: boolean }) {
   const [open, setOpen] = useState(false);
   const [tOpen, setTOpen] = useState(false);
 
   return (
-    <header
-      className={
-        transparent
-          ? "absolute top-0 left-0 right-0 z-30"
-          : "sticky top-0 z-30 bg-background/95 backdrop-blur border-b border-border"
-      }
-    >
+    <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-border">
+
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-5 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Tia Clinics" className="h-11 w-auto" />
