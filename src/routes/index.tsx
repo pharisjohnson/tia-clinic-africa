@@ -42,7 +42,7 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative min-h-[100vh] flex items-end overflow-hidden bg-white">
+    <section className="relative min-h-[100vh] flex items-end justify-center overflow-hidden bg-white">
       <img
         src={heroImg}
         alt="Tia Clinics patient transformation — one year wellness journey"
@@ -55,23 +55,23 @@ function Hero() {
       />
       <div
         aria-hidden
-        className="absolute inset-0 [background:radial-gradient(ellipse_70%_60%_at_center,transparent_40%,rgba(0,0,0,0.55)_85%,rgba(0,0,0,0.8)_100%)]"
+        className="absolute inset-0 [background:radial-gradient(ellipse_70%_60%_at_center,transparent_40%,rgba(0,0,0,0.35)_85%,rgba(0,0,0,0.55)_100%)]"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/45 to-foreground/20" />
-      <div className="relative z-10 px-6 lg:px-12 pb-24 pt-40 max-w-7xl mx-auto w-full">
-        <div className="max-w-2xl">
+      <div className="absolute inset-0 bg-gradient-to-t from-foreground/55 via-foreground/15 to-transparent" />
+      <div className="relative z-10 px-6 lg:px-12 pb-[10px] pt-40 max-w-7xl mx-auto w-full">
+        <div className="max-w-2xl mx-auto text-center">
           <p className="eyebrow text-gold mb-6">A One-Year Transformation</p>
           <h1 className="font-serif text-[36px] md:text-7xl lg:text-8xl text-background leading-[0.95] tracking-[-0.02em]">
             Where Wellness Meets
             <br />
             <em className="text-gold font-light">Aesthetic Excellence</em>
           </h1>
-          <div className="gold-divider w-32 my-10" />
-          <p className="text-background/90 text-lg md:text-xl font-light max-w-xl leading-relaxed">
+          <div className="gold-divider w-32 my-10 mx-auto" />
+          <p className="text-background/90 text-lg md:text-xl font-light max-w-xl leading-relaxed mx-auto">
             Real journeys. Real results. Pioneering non-surgical facelifts, hair restoration,
             wellness therapy and continuum care in Nairobi.
           </p>
-          <div className="mt-12 flex flex-col sm:flex-row gap-4">
+          <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/booking" className="btn-gold px-10 py-4 rounded-sm text-center">
               Book Consultation
             </Link>
