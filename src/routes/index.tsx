@@ -42,7 +42,7 @@ function Index() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#FBDDDC] via-background to-[#fdeef2]">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#fff8f5] via-white to-[#fdeef2]">
       {/* Decorative ambient orbs */}
       <div
         aria-hidden
@@ -117,14 +117,14 @@ function Hero() {
 
 function TransformationCallout() {
   return (
-    <section className="bg-forest text-background py-20 px-6 lg:px-12">
+    <section className="bg-forest text-[var(--warm-white)] py-20 px-6 lg:px-12">
       <div className="mx-auto max-w-5xl text-center">
         <p className="eyebrow text-gold mb-6">The Tia Continuum</p>
         <h2 className="font-serif text-3xl md:text-5xl leading-tight">
           Transformation is a journey — <em className="text-gold">we walk it with you.</em>
         </h2>
         <div className="gold-divider w-20 mx-auto my-8" />
-        <p className="text-background/80 font-light text-lg max-w-3xl mx-auto leading-relaxed">
+        <p className="text-[var(--warm-white)]/80 font-light text-lg max-w-3xl mx-auto leading-relaxed">
           From your first consultation through nutrition, treatment, and recovery, every step is
           curated by physicians who believe true beauty is built on lasting wellness.
         </p>
@@ -182,9 +182,9 @@ function Recovery() {
               allowFullScreen
             />
           </div>
-          <div className="absolute -bottom-8 -right-8 hidden md:block bg-forest text-background p-8 max-w-xs">
+          <div className="absolute -bottom-8 -right-8 hidden md:block bg-forest text-[var(--warm-white)] p-8 max-w-xs">
             <p className="font-serif text-4xl text-gold">24/7</p>
-            <p className="text-sm font-light tracking-wide mt-2 text-background/80">
+            <p className="text-sm font-light tracking-wide mt-2 text-[var(--warm-white)]/80">
               Continuum of care, from consultation to full recovery
             </p>
           </div>
@@ -208,7 +208,7 @@ function Recovery() {
 
 function TestimonialsPreview() {
   return (
-    <section className="py-32 px-6 lg:px-12 bg-forest text-background relative overflow-hidden">
+    <section className="py-32 px-6 lg:px-12 bg-forest text-[var(--warm-white)] relative overflow-hidden">
       <img src={skincare} alt="" aria-hidden className="absolute inset-0 w-full h-full object-cover opacity-10" />
       <div className="relative mx-auto max-w-4xl text-center">
         <p className="eyebrow text-gold mb-4">Patient Stories</p>
@@ -218,7 +218,7 @@ function TestimonialsPreview() {
         <blockquote className="font-serif text-2xl md:text-3xl italic font-light leading-snug max-w-3xl mx-auto">
           "Tia Clinics gave me back my confidence — the care was unmatched, the results refined and entirely natural."
         </blockquote>
-        <p className="mt-8 text-sm tracking-[0.2em] uppercase text-background/70">Wanjiru K. <span className="text-gold">·</span> Wellness Journey</p>
+        <p className="mt-8 text-sm tracking-[0.2em] uppercase text-[var(--warm-white)]/70">Wanjiru K. <span className="text-gold">·</span> Wellness Journey</p>
         <div className="mt-12">
           <Link to="/stories" className="btn-gold px-10 py-4 rounded-sm">Read All Stories</Link>
         </div>
